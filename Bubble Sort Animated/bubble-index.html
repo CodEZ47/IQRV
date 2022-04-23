@@ -11,12 +11,14 @@
     <div class="front-page">
         <h1 class="title" id="headline">Bubble Sort Visually Represented</h1>
         <div class="user-interaction-container">
-            <button class="auto-generator">Generate New List</button>
+            <button class="auto-generator" onclick="newList()">Generate New List</button>
         </div>
     </div>
-
+    <br>
+    <br>
     <div class="visual-rep">
         <div class="arr-container">
+            <div class="arr" id="elem-0"></div>
             <div class="arr" id="elem-1"></div>
             <div class="arr" id="elem-2"></div>
             <div class="arr" id="elem-3"></div>
@@ -26,12 +28,14 @@
             <div class="arr" id="elem-7"></div>
             <div class="arr" id="elem-8"></div>
             <div class="arr" id="elem-9"></div>
-            <div class="arr" id="elem-10"></div>
         </div>
+        <br>
+        <br>
+        <button class="sort" onclick="sort()">Sort</button>
     </div>
 
     <!-- Bubbles -->
-    <!-- <div class="bubbles bubble-1"></div>
+    <div class="bubbles bubble-1"></div>
     <div class="bubbles bubble-5"></div>
     <div class="bubbles bubble-2"></div>
     <div class="bubbles bubble-6"></div>
@@ -40,6 +44,8 @@
     <div class="bubbles bubble-4"></div>
     <div class="bubbles bubble-8"></div>
     <div class="bubbles bubble-9"></div>
-    <div class="bubbles bubble-10"></div> -->
+    <div class="bubbles bubble-10"></div>
+
+    <script src="bubble-main.js"></script>
 </body>
 </html>

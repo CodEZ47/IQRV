@@ -59,6 +59,9 @@ body {
 /* ----------------------- Visual Reresentation of Array to be Sorted ------------------------- */
 .visual-rep{
     border: solid 2px var(--action-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .arr-container{
     display: flex;
@@ -69,20 +72,70 @@ body {
 
 .arr {
     border: solid 2px var(--neutral-color);
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 50%;
     background-color: white;
-    opacity: .5;
+    box-shadow: var(--primary-color) 10px 0px 38px, var(--neutral-color) 0px 0px 50px;
+    opacity: .65;
+    text-align: center;
+    animation: bounce 2s infinite;
 }
 
-/*------------------------- Bubbles ------------------------*/
+#elem-0{
+    animation: bounce 10s infinite;
+    border: solid 2px white;
+}
+
+#elem-1{
+    animation: bounce 10s infinite;
+    border: solid 2px white;
+}
+#elem-2{
+    animation: bounce 9s infinite;
+    border: solid 2px white;
+}
+#elem-3{
+    animation: bounce 8s infinite;
+    border: solid 2px white;
+}
+#elem-4{
+    animation: bounce 7s infinite;
+    border: solid 2px white;
+}
+#elem-5{
+    animation: bounce 6s infinite;
+    border: solid 2px white;
+}
+#elem-6{
+    animation: bounce 6s infinite;
+    border: solid 2px white;
+}
+#elem-7{
+    animation: bounce 7s infinite;
+    border: solid 2px white;
+}
+#elem-8{
+    animation: bounce 8s infinite;
+    border: solid 2px white;
+}
+#elem-9{
+    animation: bounce 9s infinite;
+    border: solid 2px white;
+}
+
+.sort{
+    /* left: 50%; */
+}
+
+/*------------------------- Bubbles Background Animations ------------------------*/
 .bubbles {
     position: absolute;
     bottom: 0;
     z-index: 0;
     margin-right: 50px;
     background-color: white;
+    box-shadow: var(--primary-color) 10px 0px 38px, var(--neutral-color) 0px 0px 12px;
     border-radius: 50%;
     opacity: .50;
     width: 40px;
@@ -96,7 +149,7 @@ body {
 }
 .bubble-2 {
     left: 350px;
-    animation: up 2s infinite;
+    animation: up 4s infinite;
 }
 
 .bubble-3 {
@@ -107,7 +160,7 @@ body {
 
 .bubble-4 {
     left: 1150px;
-    animation: up 5.9s infinite;
+    animation: up 8s infinite;
 }
 
 .bubble-5 {
@@ -129,7 +182,7 @@ body {
 .bubble-8 {
     left: 1050px;
     opacity: .30;
-    animation: up 3.2s infinite;
+    animation: up 5s infinite;
 }
 
 .bubble-9 {
@@ -147,7 +200,29 @@ body {
 
 /* Bubbles Animation */
 @keyframes up {
-    100% {
-      transform: translateY(-800px);
+    100%{
+        transform: translateY(-700px);
     }
+}
+/* Array bounce animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+        
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* Animation when computer is comparing values */
+@keyframes compare {
+    100%{
+        transform: translateY(-20px);
+        border: solid red;
+    }
+    
 }
