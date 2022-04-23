@@ -1,0 +1,153 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
+* {
+    z-index: 1;
+}
+:root{
+
+    /* Fonts */
+    font-family: 'Roboto Mono', monospace;
+    --title-font: Roboto Mono; 
+
+    font-size: 100%;
+    --small-font: 0.5rem;
+    --normal-font: 1rem;
+    --large-font: 3rem;
+
+    /* Colors */
+
+    --text-color: rgba(233, 253, 255, 1);
+    --primary-color: rgba(9, 219, 245, 1);
+    --secondary-color: rgba(66, 161, 198, 1);
+    --action-color: rgba(137, 248, 167, 1);
+    --neutral-color: rgba(230, 244, 241, 1);
+
+}
+body {
+    width: auto;
+    height: auto;
+    background-color: var(--secondary-color);
+}
+
+.front-page {
+    border: solid 2px var(--action-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-family: var(--title-font);
+}
+
+#headline {
+    border: solid 2px var(--action-color);
+    text-align: center;
+    color: var(--text-color);
+    font-size: var(--large-font);
+    
+}
+
+.auto-generator {
+    border: solid 2px var(--action-color);
+    font-size: var(--normal-font);
+
+}
+
+/* ----------------------- Visual Reresentation of Array to be Sorted ------------------------- */
+.visual-rep{
+    border: solid 2px var(--action-color);
+}
+.arr-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+
+.arr {
+    border: solid 2px var(--neutral-color);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: .5;
+}
+
+/*------------------------- Bubbles ------------------------*/
+.bubbles {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    margin-right: 50px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: .50;
+    width: 40px;
+    height: 40px;
+    animation: up 4s infinite;
+  }
+
+.bubble-1 {
+    left: 550px;
+    animation: up 8s infinite;
+}
+.bubble-2 {
+    left: 350px;
+    animation: up 2s infinite;
+}
+
+.bubble-3 {
+    left: 750px;
+    opacity: .30;
+    animation: up 5.2s infinite;
+}
+
+.bubble-4 {
+    left: 1150px;
+    animation: up 5.9s infinite;
+}
+
+.bubble-5 {
+    left: 50px;
+    animation: up 5.4s infinite;
+}
+
+.bubble-6 {
+    left: 300px;
+    opacity: .30;
+    animation: up 3.7s infinite;
+}
+
+.bubble-7 {
+    left: 1500px;
+    animation: up 4.3s infinite;
+}
+
+.bubble-8 {
+    left: 1050px;
+    opacity: .30;
+    animation: up 3.2s infinite;
+}
+
+.bubble-9 {
+    left: 1200px;
+    opacity: .30;
+    animation: up 5.4s infinite;
+}
+
+.bubble-10 {
+    left: 670px;
+    opacity: .30;
+    animation: up 3.9s infinite;
+}
+
+
+/* Bubbles Animation */
+@keyframes up {
+    100% {
+      transform: translateY(-800px);
+    }
+}
