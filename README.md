@@ -1,2 +1,2 @@
-# IQV
-Visual representations of interview questions.
+# IQRV
+Interview Questions Represented Visually
