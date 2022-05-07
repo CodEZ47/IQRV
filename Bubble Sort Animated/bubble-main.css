@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
 * {
     z-index: 1;
+    box-sizing: border-box;
 }
 :root{
 
@@ -26,6 +27,7 @@
 body {
     width: auto;
     height: auto;
+    padding: 1vw;
     background-color: var(--secondary-color);
 }
 
@@ -64,6 +66,7 @@ body {
     align-items: center;
 }
 .arr-container{
+    border: solid 2px var(--action-color);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -88,19 +91,19 @@ body {
 }
 
 #elem-1{
-    animation: bounce 10s infinite;
-    border: solid 2px white;
-}
-#elem-2{
     animation: bounce 9s infinite;
     border: solid 2px white;
 }
-#elem-3{
+#elem-2{
     animation: bounce 8s infinite;
     border: solid 2px white;
 }
-#elem-4{
+#elem-3{
     animation: bounce 7s infinite;
+    border: solid 2px white;
+}
+#elem-4{
+    animation: bounce 6s infinite;
     border: solid 2px white;
 }
 #elem-5{
@@ -108,19 +111,19 @@ body {
     border: solid 2px white;
 }
 #elem-6{
-    animation: bounce 6s infinite;
-    border: solid 2px white;
-}
-#elem-7{
     animation: bounce 7s infinite;
     border: solid 2px white;
 }
-#elem-8{
+#elem-7{
     animation: bounce 8s infinite;
     border: solid 2px white;
 }
-#elem-9{
+#elem-8{
     animation: bounce 9s infinite;
+    border: solid 2px white;
+}
+#elem-9{
+    animation: bounce 10s infinite;
     border: solid 2px white;
 }
 
