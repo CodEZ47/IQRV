@@ -27,6 +27,7 @@
 body {
     width: auto;
     height: auto;
+    overflow: hidden;
     padding: 1vw;
     background-color: var(--secondary-color);
 }
