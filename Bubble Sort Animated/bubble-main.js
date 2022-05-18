@@ -24,7 +24,7 @@ function newList(){
     
 }
 function sort(){
-    // console.log(sortFunction(array));
+    console.log(sortFunction(array));
     animateUp(0);
 }
 
