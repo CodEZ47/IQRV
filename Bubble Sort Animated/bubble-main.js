@@ -15,6 +15,8 @@ function setValues(arr){
 //creates a new list and calls the setValues function.
 function newList(){
     let arr = [];
+    array = [];//empties the array for its next use
+    arrayCopy = [];
     for (let i = 0; i < 10; i++){
 
         arr.push(Math.floor(Math.random() * 15));
