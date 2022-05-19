@@ -60,25 +60,29 @@ function stopAnimation(){
 //function to stop animation at a specific index and the next index
 function stopAnimationByIndex(index){
     document.getElementById("elem-" + index).style.animation = "none";
+    
 }
 
 let ctr = 5;
 //function to animate the floating animation before comparision.
 function animateUp(index){
     if(index < 9){
-        document.getElementById("elem-" + index).style.animation = "bounce 5s";
-        document.getElementById("elem-" + index+1).style.animation = "up 5s";
+        document.getElementById("elem-" + index).style.animation = "bounce 2s";
+        document.getElementById("elem-" + (index+1)).style.animation = "bounce 2s";
+        console.log("animation given to both");
         setTimeout(function() {
 
             stopAnimationByIndex(index);
+            console.log("animation taken from first");
         
-        }, 6000);
+        }, 2100);
         // ctr+=5;
         setTimeout(function() {
 
-            stopAnimationByIndex(index+1);
+            stopAnimationByIndex((index+1));
+            console.log("animation taken from second");
         
-        }, 6000);
+        }, 2100);
     }
     else{
         return;
@@ -86,9 +90,10 @@ function animateUp(index){
     
     setTimeout(function() {
 
-        animateUp(index+1);
+        animateUp((index+1));
+        console.log("next animation");
     
-    }, 7000);
+    }, 2500);
 }
 
 // newList();
