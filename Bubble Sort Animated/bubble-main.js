@@ -34,7 +34,7 @@ async function newList(){
         elem.style.boxShadow = `10px 0px 38px var(--primary-color), 0px 0px 50px var(--neutral-color)
         `;
         elem.style.textAlign = `center`;
-        container.style.columnGap = `${cGap * 0.5}rem`
+        container.style.columnGap = `${cGap * 0.1}rem`
 
 
         let elem_label = document.createElement("p");

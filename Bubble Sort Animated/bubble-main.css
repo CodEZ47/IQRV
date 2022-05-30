@@ -25,7 +25,7 @@
 
 }
 body {
-    width: auto;
+    width: 100%;
     height: auto;
     overflow: hidden;
     padding: 1vw;
@@ -216,7 +216,7 @@ body {
         transform: translateY(-20px);
     }
     50% {
-        transform: translateX(2.5rem);
+        transform: translateX(1.5rem);
     }
     75%{
         transform: translateY(-20px);
@@ -235,7 +235,7 @@ body {
         transform: translateY(-20px);
     }
     50% {
-        transform: translateX(-2.5rem);
+        transform: translateX(-1.5rem);
     }
     75%{
         transform: translateY(-20px);
