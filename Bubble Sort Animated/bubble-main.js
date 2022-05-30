@@ -117,7 +117,7 @@ function sort(index){
     if(index < (no_of_rounds)){
         a = index;
         b = 0;
-        console.log("I am still running.");
+        // console.log("I am still running.");
         round_sort(0);
     }
     else{
