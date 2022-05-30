@@ -132,7 +132,7 @@ function sort(index){
         ctr--;
         sort((index+1));
     
-    }, ((ctr -1) * 2200));
+    }, ((ctr -1) * 2500));
 };
 
 

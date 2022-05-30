@@ -250,7 +250,7 @@ body {
 
 @media only screen and (min-width: 600px) {
     body {
-      width: auto;
+      width: 100%;
       height: auto;
     }
   }
