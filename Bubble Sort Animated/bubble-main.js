@@ -212,29 +212,29 @@ async function round_sort(i){
 
 sort(0);
 
-let width = window.innerWidth;
+// let width = window.innerWidth;
 
-function bubbleRandomizer(){
+// function bubbleRandomizer(){
 
-    let bubbles = document.querySelectorAll(".bubbles");
-    let v = 0;
+//     let bubbles = document.querySelectorAll(".bubbles");
+//     let v = 0;
 
 
-    for(let i = 1; i <= bubbles.length; i++){
-        v = Math.ceil(Math.random() * width);
-        document.getElementById("bubble-" + i).style.left = `${v}px`;
-    };
+//     for(let i = 1; i <= bubbles.length; i++){
+//         v = Math.ceil(Math.random() * width);
+//         document.getElementById("bubble-" + i).style.left = `${v}px`;
+//     };
 
     
-}
+// }
 
-function repeater(){
-    setTimeout(function() {
+// function repeater(){
+//     setTimeout(function() {
 
-        bubbleRandomizer();
-        repeater();
+//         bubbleRandomizer();
+//         repeater();
     
-    }, 10000);
-}
+//     }, 10000);
+// }
 
-repeater();
+// repeater();
