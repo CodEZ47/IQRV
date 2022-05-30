@@ -211,3 +211,30 @@ async function round_sort(i){
 };
 
 sort(0);
+
+let width = window.innerWidth;
+
+function bubbleRandomizer(){
+
+    let bubbles = document.querySelectorAll(".bubbles");
+    let v = 0;
+
+
+    for(let i = 1; i <= bubbles.length; i++){
+        v = Math.ceil(Math.random() * width);
+        document.getElementById("bubble-" + i).style.left = `${v}px`;
+    };
+
+    
+}
+
+function repeater(){
+    setTimeout(function() {
+
+        bubbleRandomizer();
+        repeater();
+    
+    }, 10000);
+}
+
+repeater();
