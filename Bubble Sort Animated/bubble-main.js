@@ -99,8 +99,8 @@ function solve(a){
 };
 
 solve(arr);
-console.log(swapped_indices);
-console.log(all_indices);
+// console.log(swapped_indices);
+// console.log(all_indices);
 // ----------------------------------------------------------
 
 
@@ -154,7 +154,7 @@ async function round_sort(i){
 
         if (s == true){
             // animate
-            console.log(t +","+ t2);
+            // console.log(t +","+ t2);
             elements[t].style.backgroundColor = `red`;
             elements[t2].style.backgroundColor = `red`;
 
@@ -182,8 +182,8 @@ async function round_sort(i){
         }
         else if (t2 != ctr){
             //animate
-            console.log(ctr);
-            console.log(t +","+ t2);
+            // console.log(ctr);
+            // console.log(t +","+ t2);
             elements[t].style.backgroundColor = `var(--primary-color)`;
             elements[t2].style.backgroundColor = `var(--primary-color)`;
 
