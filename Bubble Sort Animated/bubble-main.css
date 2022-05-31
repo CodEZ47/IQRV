@@ -61,7 +61,7 @@ body {
 
 /* ----------------------- Visual Reresentation of Array to be Sorted ------------------------- */
 .visual-rep{
-    /* border: solid 2px var(--action-color); */
+    border: solid 2px var(--action-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,60 +73,6 @@ body {
     justify-content: center;
     column-gap: 0.5rem;
 }
-
-/*.arr {
-    height: 2.5rem;
-    width: 2.5rem;
-    border-radius: 50%;
-    background-color: white;
-    box-shadow: var(--primary-color) 10px 0px 38px, var(--neutral-color) 0px 0px 50px;
-    opacity: .65;
-    text-align: center;
-    animation: bounce 2s infinite;
-}
-
-#elem-0{
-    animation: bounce 10s infinite;
-    border: solid 2px white;
-}
-
-#elem-1{
-    animation: bounce 9s infinite;
-    border: solid 2px white;
-}
-#elem-2{
-    animation: bounce 8s infinite;
-    border: solid 2px white;
-}
-#elem-3{
-    animation: bounce 7s infinite;
-    border: solid 2px white;
-}
-#elem-4{
-    animation: bounce 6s infinite;
-    border: solid 2px white;
-}
-#elem-5{
-    animation: bounce 6s infinite;
-    border: solid 2px white;
-}
-#elem-6{
-    animation: bounce 7s infinite;
-    border: solid 2px white;
-}
-#elem-7{
-    animation: bounce 8s infinite;
-    border: solid 2px white;
-}
-#elem-8{
-    animation: bounce 9s infinite;
-    border: solid 2px white;
-}
-#elem-9{
-    animation: bounce 10s infinite;
-    border: solid 2px white;
-}
-*/
 
 /*------------------------- Bubbles Background Animations ------------------------*/
 .bubbles {
@@ -144,55 +90,55 @@ body {
   }
 
 .bubble-1 {
-    left: 550px;
+    left: 1vw;
     animation: up 8s infinite;
 }
 .bubble-2 {
-    left: 350px;
+    left: 45vw;
     animation: up 4s infinite;
 }
 
 .bubble-3 {
-    left: 750px;
+    left: 90vw;
     opacity: .30;
     animation: up 5.2s infinite;
 }
 
 .bubble-4 {
-    left: 1150px;
+    left: 15vw;
     animation: up 8s infinite;
 }
 
 .bubble-5 {
-    left: 50px;
+    left: 30vw;
     animation: up 5.4s infinite;
 }
 
 .bubble-6 {
-    left: 300px;
+    left: 700vw;
     opacity: .30;
     animation: up 3.7s infinite;
 }
 
 .bubble-7 {
-    left: 1500px;
+    left: 10vw;
     animation: up 4.3s infinite;
 }
 
 .bubble-8 {
-    left: 1050px;
+    left: 80vw;
     opacity: .30;
     animation: up 5s infinite;
 }
 
 .bubble-9 {
-    left: 1200px;
+    left: 20vw;
     opacity: .30;
     animation: up 5.4s infinite;
 }
 
 .bubble-10 {
-    left: 670px;
+    left: 60vw;
     opacity: .30;
     animation: up 3.9s infinite;
 }
