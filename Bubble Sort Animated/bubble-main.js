@@ -56,17 +56,7 @@ async function newList(){
     
 }
 newList();
-// async function generate(){
-//     await new Promise((resolve) =>
-//         setTimeout(() => {
-//             resolve();
-//         }, 1000)
-//     );
 
-//     newList();
-// }
-
-// ------------------------------------------------
 
 
 
@@ -128,7 +118,7 @@ solve(arr);
 
 let a = b = 0;
 let ctr = num_of_elements;//decrements everytime the sort function runs used to stop the animation checking the last elements for every round.
-let delay = 100;//delay for everything except animations
+let delay = 1000;//delay for everything except animations
 let animateDelay = delay/1000;//delay for animation
 
 
