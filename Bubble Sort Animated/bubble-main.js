@@ -3,20 +3,39 @@ let num_of_elements = 8;//remember to adjust the time accordingly
 let cGap = 4;//decides the gap between the elements
 let arr = [];//array used to generate keys while it is sorted.
 
+let swapped_indices = [];//array of arrays that has all the swapped indices of all rounds.
+let round_indices = [];//array that temporarily stores the swapped indices of each round.
+let all_indices = [];//array to compare the indices of the swapped ones with.
+let no_of_rounds = 0;//counts how many rounds it took the algorithm to solve the problem.
+let elements;
+
+let a = b = 0;//used to iterate through the arrays for each round.
+let ctr = num_of_elements;//decrements everytime the sort function runs used to stop the animation checking the last elements for every round.
+let delay = 1000;//delay for everything except animations
+let animateDelay = delay/1000;//delay for animation
+
+let t = t2 = 0;//used to locate each element on the array
+let temp;//for swapping text values.
 
 
+newList();
 
-
-
+// function start(){
+//     sort(0);
+// }
 
 //creates new list
-async function newList(){
+function newList(){
 
     //empties container
     document.getElementById("arr-container").innerHTML = "";
 
-    //empties array
+    //empties arrays
     arr = [];
+    elements = [];
+    swapped_indices = [];
+    all_indices = [];
+    round_indices = [];
 
     for (let i = 0; i < num_of_elements; i++){
 
@@ -53,21 +72,12 @@ async function newList(){
         elem.appendChild(elem_label);
         container.appendChild(elem);
     }
-    
-}
-newList();
 
-
-
-
-
-
-
-let swapped_indices = [];//array of arrays that has all the swapped indices of all rounds.
-let round_indices = [];//array that temporarily stores the swapped indices of each round.
-let all_indices = [];//array to compare the indices of the swapped ones with.
-let no_of_rounds = 0;//counts how many rounds it took the algorithm to solve the problem.
-let elements = document.querySelectorAll(".elems");//all the created bubble elements.
+    elements = document.querySelectorAll(".elems");//all the created bubble elements.
+    createArrayToCompare();
+    solve(arr);
+    sort(0);    
+};
 
 
 //pushes all the indices to use for comparision in swapped indices
@@ -77,7 +87,7 @@ function createArrayToCompare(){
         all_indices.push(i+1);
     }
 }
-createArrayToCompare();
+
 
 
 //sorts the passed array and pushes the swapped indices to swapped_indices
@@ -106,20 +116,7 @@ function solve(a){
         no_of_rounds +=1;
     }
 };
-
-solve(arr);
 // ----------------------------------------------------------
-
-
-
-
-
-
-
-let a = b = 0;
-let ctr = num_of_elements;//decrements everytime the sort function runs used to stop the animation checking the last elements for every round.
-let delay = 1000;//delay for everything except animations
-let animateDelay = delay/1000;//delay for animation
 
 
 
@@ -146,18 +143,12 @@ function sort(index){
 
         //last elements for each round locked in.
         elements[ctr-1].style.backgroundColor = `var(--action-color)`;
-
-
         ctr--;
         sort((index+1));
     
     }, ((ctr -1) * delay*1.6));
 };
 
-
-
-let t = t2 = 0;
-let temp;
 
 async function round_sort(i){
 
@@ -236,4 +227,3 @@ async function round_sort(i){
     
 };
 
-sort(0);
