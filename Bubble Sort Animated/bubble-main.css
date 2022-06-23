@@ -163,7 +163,7 @@ html, body {
         transform: translateY(-20px);
     }
     50% {
-        transform: translateX(1.5rem);
+        transform: translateX(2rem);
     }
     75%{
         transform: translateY(-20px);
@@ -182,7 +182,7 @@ html, body {
         transform: translateY(-20px);
     }
     50% {
-        transform: translateX(-1.5rem);
+        transform: translateX(-2rem);
     }
     75%{
         transform: translateY(-20px);
